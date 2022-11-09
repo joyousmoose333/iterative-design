@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iterative Design</title>
+    <!-- Latest compiled and minified bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <!-- Latest compiled JavaScript bundle -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Latest compiled JavaScript library -->
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <!-- import custom CSS styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- page content goes into <body> -->
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="index">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#index">Iterative Design</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="navbar-item"><a class="nav-link" href="#motivation">Motivation</a></li>
+            <li class="navbar-item"><a class="nav-link" href="#startup">The Startup</a></li>
+            <li class="navbar-item"><a class="nav-link" href="#sketches">Sketches</a></li>
+            <li class="navbar-item"><a class="nav-link" href="#high-fi">Initial Mockup</a></li>
+            <li class="navbar-item"><a class="nav-link" href="#critique">Critique & Final Mockup</a></li>
+            <li class="navbar-item"><a class="nav-link" href="#testing">User Testing</a></li>
+            <li class="navbar-item"><a class="nav-link" href="#conclusions">Conclusions</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="d-flex flex-column justify-content-space-around align-items-center">
+      <div class="card" id="motivation">
+        <div class="card-body">
+          <h5 class="card-title">Motivation</h5>
+          <p class="card-text">Welcome to our iterative design journey! Considering the importance of iterating through
+            multiple rounds of design, critique and testing in product development, we formed a team to go through a
+            typical design workflow of a startup's product--in this case, an online Manga subscription service called
+            Azuki. We challenged ourselves to design a prototype for Azuki's site without looking at the startup's
+            current product. Here we describe our process from sketching to user testing.</p>
+          </p>
+        </div>
+      </div>
+      <div class="card" id="startup">
+        <div class="card-body">
+          <h5 class="card-title">The Startup</h5>
+          <p class="card-text">We chose to design a desktop prototype for <a href="https://www.azuki.co/">Azuki</a>, a
+          startup that provides digitally licensed manga online in a subscription-based model! Azuki received funding in
+          Y Combinator's Winter 2022 round, and has been active since. For more info, see 
+          <a href="https://www.ycombinator.com/companies/azuki">Azuki's YC page</a>.</p>
+          </p>
+        </div>
+      </div>
+      <div class="card" id="sketches">
+        <div class="card-body">
+          <h5 class="card-title">Sketches</h5>
+          <p class="card-text">We began by brainstorming multiple possible interface designs for our site. Below are our
+            initial rough sketches. These represent a variety of layouts that we then workshopped and discussed to decide
+            on a final design.</p>
+          <div class="gallery-container">
+            <img src="sketches/sketch1.png" alt="sketch1" class="sketch">
+            <img src="sketches/sketch2.png" alt="sketch2" class="sketch">
+            <img src="sketches/sketch3.png" alt="sketch3" class="sketch">
+            <img src="sketches/sketch4.png" alt="sketch4" class="sketch">
+          </div>
+        </div>
+      </div>
+      <div class="card" id="wireframes">
+        <div class="card-body">
+          <h5 class="card-title">Wireframes</h5>
+          <p class="card-text">After deciding on a final design, we created wireframes to represent the layout of our
+            site. We used Figma to create our wireframes to allow for real-time collaboration. Below are our wireframes.</p>
+          <div class="gallery-container">
+              <h6 class="card-subtitle mb-2 text-muted">Home Page</h6>
+            <img src="azukilofi/azukilofi1.png" alt="home" class="wireframe">
+            <h6 class="card-subtitle mb-2 text-muted">Subscriptions Page</h6>
+            <img src="azukilofi/azukilofi2.png" alt="subscriptions" class="wireframe">
+            <h6 class="card-subtitle mb-2 text-muted">"My Mangas" Page</h6>
+            <img src="azukilofi/azukilofi3.png" alt="my mangas" class="wireframe">
+            <h6 class="card-subtitle mb-2 text-muted">E-Reader Page</h6>
+            <img src="azukilofi/azukilofi4.png" alt="e-reader" class="wireframe">
+            <h6 class="card-subtitle mb-2 text-muted">Search Results Page</h6>
+            <img src="azukilofi/azukilofi5.png" alt="search results" class="wireframe">
+          </div>
+        </div>
+      </div>
+      <div class="card" id="high-fi">
+        <div class="card-body">
+          <h5 class="card-title">Initial Mockup</h5>
+          <p class="card-text">Next, we proceeded to translate our wireframes into a HiFi, interactive mockup using Figma.
+            Here, we made our major design choices for color, content, and hierarchy to build a usable mockup. 
+          </p>
+          <h6 class="card-subtitle mb-2 text-muted">Initial Design Choices</h6>
+          <p class="card-text">
+            <ul>
+              <li> Combined best practices from our different designs (Netflix-like home page, top-of-screen navigation
+                bar, etc.)</li>
+              <li> Used a color scheme and font that is easy on the eyes and easy to read with high contrast
+                <li>Orange and blue for elements</li>
+                <li>Black or off-white font depending on background</li>
+                <li>Off-white background for high-contrast without straining eyes</li>
+              </li>
+              <li> Made the site as simple as possible, with a minimalistic design</li>
+              <li> Made the site as intuitive as possible, with clear and consistent labeling, and interactive elements
+                with common affordances (e.g. downward arrow for navigation bar dropdown)
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="card" id="critique">
+        <div class="card-body">
+          <h5 class="card-title">Critique & Final Mockup</h5>
+          <p class="card-text">Following the methodology of a traditional iterative design process, we participated in a
+            critique session where we received feedback on our mockup. Listed below are the points of feedback we received
+            and took into consideration when designing the second iteration of our mockup.
+          </p>
+          <h6 class="card-subtitle mb-2 text-muted">Feedback</h6>
+          <p class="card-text">
+            <ul>
+              <li>Change color of social media icons to blend in with the design of the rest of our site</li>
+              <li>Make "My Library" dropdown open with click on every page that includes my library in the header.</li>
+              <li>Make titles of categories on home page more noticeable (more spacing, different text styling for visual hierarchy)</li>
+              <li>Include a way to return back to title page after opening a book page</li>
+              <li>Provide an indication of how search results were sorted</li>
+              <li>Have phone number and email links</li>
+              <li>Make search results and home page less similar</li>
+              <li>Include chapter guide in case a user does not want to start at the beginning</li>
+              <li>Check for continuity of capitalization (lowercase aesthetic <3)</li>
+            </ul>
+          </p>
+          <h6 class="card-subtitle mb-2 text-muted">Final Mockup</h6>
+          <p class="card-text">After incorporating the feedback we received, we created a second iteration of our mockup.
+              <a href="https://www.figma.com/proto/EtcflLQTgohIrQWn5ooW6b/Anonymous-Azuki-Hi-Fi?node-id=5%3A1793&starting-point-node-id=5%3A1793&scaling=scale-down">View the anonymized prototype here</a>!</p>
+        </div>
+      </div>
+      <div class="card" id="testing">
+        <div class="card-body">
+          <h5 class="card-title">User Testing Setup & Initial Data</h5>
+          <p class="card-text">We used a remote usability test to collect feedback from three users on our mockup. To setup the user test, we provided task 
+            instructions and post-test questions so that the users could provide us with useful feedback.
+            Tasks are numbered 1-10 with user responses / data!</p>
+          <ol type="1">
+            <br>
+            <b><li>Log into the site</li></b>
+            <img src="data/task1data.png" width="500" height="auto">
+            <br>
+            <br>
+            <b><li>Scroll through recommended</li></b>
+            <img src="data/task2data.png" width="500" height="auto">
+            <br>
+            <br>
+            <b><li>Take as much time as you need to explore this website. Move on to the next task when you're ready.</li></b>
+            <br>
+            <b><li>In your own words, what do you think you can do on this page? Be specific.</li></b>
+            <br>
+            <p>Responses</p>
+            <ul>
+              <li>User 1: "Scroll the home page and click to view book in more detail. See an overview of the book and add to library or click through to read."</li>
+              <li>User 2: "in this page i can scroll through a lot of manga categories and easily find something interesting. I think mangas are categorized neatly ,which makes them easily accessible."</li>
+              <li>User 3: "I think the home page can be used for quick access to favorites."</li> 
+            </ul>
+           
+            <br>
+        
+            <b><li>Like a book</li></b>
+            <img src="data/task5data.png" width="500" height="auto">
+            <br>
+            <br>
+            <b><li>Unlike a book</li></b>
+            <img src="data/task6data.png" width="500" height="auto">
+            <br>
+            <br>
+            <b><li>Get to a library, any of ‘my favorites’ ‘my recents’ or ‘my lists’</li></b>
+            <img src="data/task7data.png" width="500" height="auto">
+            <br>
+            <br>
+            <b><li>Get to profile page and read the FAQ</li></b>
+            <img src="data/task8data.png" width="500" height="auto">
+            <br>
+            <br>
+            <b><li>In your own words, describe how you might benefit from using Azuki.</li></b>
+            <br>
+            <p>Responses</p>
+            <ul>
+              <li>User 1: "Digital subscriptions are my preference when I want to try something out but not have hardcopies cluttering my house."</li>
+              <li>User 2: "Azuki seems helpful that i can get everything i need under one platform. i wouldnt need to use multiple platforms to read mangas. So i think Azuki will make my life easier , that i dont have to search in multiple platforms for a manga."</li>
+              <li>User 3: "I would benefit from using Azuki because I love manga and anything anime related."</li>
+            </ul>
+            <br>
+        
+            <b><li>How unlikely or likely are you to use Azuki in the future? Explain your answer.</li></b>
+            <br>
+            <p>Responses</p>
+            <ul>
+              <li>User 1: "Unlikely, as I don't have a need for it's service at the moment. The interface seems a little clunky and not very sleek."</li>
+              <li>User 2: "i am very likely to use Azuki in the future for sure. and i think everyone who likes manga would definitely give Azuki a try."</li>
+              <li>User 3: "I am very likely to use Azuki in the future. I would love an app or website that I can get manga."</li>
+            </ul>
+          </ol>
+        </div>
+      </div>
+
+      <div class="card" id="analyzing-user-testing">
+        <div class="card-body">
+          <h5 class="card-title">More User Testing Results</h5>
+          <p class="card-text">Below is a deeper analysis of the results of our User Testing!
+          </p>
+          <h6 class="card-subtitle mb-2 text-muted">Test User 1 <a href="https://app.usertesting.com/v/3e1ddb74-b7d4-464a-b923-f8cbce768250?encrypted_video_handle=f3bf5de6-17db-44f7-bc8b-4f36276a9e38&utm_campaign=email_clicks&utm_medium=email&utm_source=usertesting.com_system#!/notes&shared_via=link">(video linked here)</a></h6>
+          <p class="card-text">
+            <ul>
+              <li>They tried to login and were not sure if they completed the entire task because they could not fill in email password (that part of our prototype is not responsive)</li>
+              <li>They looked at the homepage and easily scrolled through the recommended, completing the task successfully</li>  
+              <li>They explored the site and tried to find a clickable manga which took a moment</li>  
+              <li>They found the overview of a manga and clicked start reading, but didnt find the page flipping functionality. They also noted that there is no back button from the book description page. </li>  
+              <li>They assume that adding a heart adds the book to the library and successfully hearts a manga.</li>  
+              <li>They go to a library successfully and thinks the task is very easy. </li>  
+              <li>They go to their profile page successfully (assumes that the profile page is the image on the top right)</li>  
+              <li>They share that they would’ve expected a FAQ instead of contact info in the FAQ section.</li>  
+              <li>They share that they would benefit from Azuki through not having to have their space cluttered with physical copies of manga, but critique the design of the interface, wishing for a more mature and sleek aesthetic. </li>  
+            </ul>
+          </p>
+
+          <h6 class="card-subtitle mb-2 text-muted">Test User 2 <a href="https://app.usertesting.com/v/bfc92aff-4b7a-493e-8fac-959a113c9b3d?encrypted_video_handle=6f30c57d-946d-472a-b6c7-c09bd76a4a34&utm_campaign=email_clicks&utm_medium=email&utm_source=usertesting.com_system#!/notes&shared_via=link">(video linked here)</a></h6>
+          <p class="card-text">
+            <ul>
+              <li>They tried to login and were not sure if they completed the entire task because they could not fill in email password (that part of our prototype is not responsive)</li>
+              <li>They successfully logged in to the page, it seemed very straightforward to them.</li>
+              <li>They successfully scrolled through the recommended section. However they were unure what was clickable.</li>
+              <li>They were impressed with how the mangas are arranged neatly on the home page and that they are easily accessible</li>
+              <li>They are able to successfully describe the contents and purpose of the homepage. </li>
+              <li>They struggle to like book and can’t find out how to open the description page of a story. Only some of the titles lead to a title page.</li>
+              <li>They successfully clicked liked, and hopes that that will add it to his library but is unsure whether it will. They also successfully unlikes a book</li>
+              <li>They struggle to go to their library from the book page and can only navigate to my list.</li>
+              <li>They can successfully navigate to all library pages and glad there is a sorting option. He thought the task was very simple. </li>
+              <li>They think the profile picture is very clear, which is helpful. </li>
+              <li>Continually states that they think it's a great website to have, they are a big manga enthusiast.</li>
+              <li>They think the FAQ is straightforward, it is good for a beginning stage and it is good to see a number and email. </li>
+              <li>They successfully navigate to the profile page and read FAQs.They think the task is easy.</li>
+              <li>They say that Azuki seems helpful in that you can get all your manga under one platform.</li>
+              <li>They are very likely to use azuki in the future for sure.
+            </ul>
+          </p>
+
+          <h6 class="card-subtitle mb-2 text-muted">Test User 3 <a href=" https://app.usertesting.com/v/64409d1c-4b0f-4f9b-931f-61f5d92a3734?encrypted_video_handle=d836bfb8-4ae8-481d-8036-7472627efe8c&utm_campaign=email_clicks&utm_medium=email&utm_source=usertesting.com_system#!/notes&shared_via=link">(video linked here)</a></h6>
+          <p class="card-text">
+            <ul>
+              <li>They log in successfully</li>
+              <li>They have trouble scrolling through and thinks there are not a lot of options of manga.</li> 
+              <li>They did not provide a clear description of the homepage </li>
+              <li>They had a lot of trouble, as they seemed to be confused about the task and which manga they were supposed to like. But, they very easily like a manga, once they decide which they want to like, and also successfully unlike one.</li>
+              <li>They successfully navigate to my library.</li>
+              <li>They are confused about why FAQ has no questions.</li>
+              <li>They love manga and are very likely to use Azuki. </li>
+            </ul>
+          </p> 
+
+        </div>
+      </div>   
+
+      
+      <div class="card" id="last-analysis">
+        <div class="card-body">
+          <h5 class="card-title">Overall Analysis of User Testing</h5>
+          <p class="card-text">We expected that all of the tasks were going to be successfully completed, as the tasks we wrote represented the flow and functionality we attempted to build out in our prototype. Most of our tasks were successfully completed by all three testers and most of the difficulty and confusion came from the fact that our prototype is not 100% interactable and functional. All of these results matched our expectations and it was useful to see those expectations met by users who were outside of our team.     
+          </p>
+          <h6 class="card-subtitle mb-2 text-muted">Changes we would make given this feedback:</h6>
+          <p>Given this feedback, we would create much clearer navigation between pages (especially if we were to build out our HiFi into a real site), specifically with more clear “back” functionality and clearer methods for learnability. Maybe a pop-up to explain the page-flip functionality upon first use would be useful.
+          </p>
+        </div>
+      </div>  
+
+
+      <div class="card" id="conclusions">
+        <div class="card-body">
+          <h5 class="card-title">Conclusions</h5>
+          <p class="card-text">This iterative design experience was one of invaluable learning for our team. We gained further experience with prototyping, user testing, and aligning the mission of a product to our interface. We shared this prototype with Azuki and we hope that they will find value in our attempt at designing their product. Thank you so much for reading!     
+          </p>
+        </div>
+      </div>     
+    </div>
+  </body>
+</html>
